@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Practice text box" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-26T17:33:18" hostname="LAPTOP-BNAK8A6Q" time="22.445">
+<testsuite name="Practice text box" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-03T13:57:20" hostname="LAPTOP-BNAK8A6Q" time="23.884">
   <properties/>
-  <testcase name="Full text box with excel" classname="Practice text box" time="22.445"/>
+  <testcase name="Full text box with excel" classname="Practice text box" time="23.884">
+    <failure message="java.lang.AssertionError: &#10;Expected: equalToIgnoringCase(&quot;Permananet Address :Carrera 56 # 5&quot;)&#10;     but: was Permananet Address :Carrera 56 # 50" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: equalToIgnoringCase(&quot;Permananet Address :Carrera 56 # 5&quot;)
+     but: was Permananet Address :Carrera 56 # 50
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at com.demoqa.automation.tasks.ExcelValidations.performAs(ExcelValidations.java:23)
+	at com.demoqa.automation.tasks.ExcelValidations$$EnhancerByCGLIB$$856ac808.CGLIB$performAs$0(&lt;generated&gt;)
+	at com.demoqa.automation.tasks.ExcelValidations$$EnhancerByCGLIB$$856ac808$$FastClassByCGLIB$$75c8c2ff.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.demoqa.automation.tasks.ExcelValidations$$EnhancerByCGLIB$$856ac808.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.demoqa.tests.stepdefinitions.TextBoxStepDefinitions.heShouldSeeHimDataDown(TextBoxStepDefinitions.java:51)
+	at ✽.he should see him data down.(src/test/resources/features/textBox.feature:13)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[jun 26, 2021 12:33:19 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[jul 03, 2021 8:57:21 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disable-popup-blocking,--..., goog:chromeOptions: {args: [--disable-popup-blocking, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --disable-dev-shm-usage], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 34338
+Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 6821
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-jun 26, 2021 12:33:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+jul 03, 2021 8:57:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: Full text box with excel
-----------------------------------------------------------------------------
+TEST FAILED: Full text box with excel
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then get text question should be equalToIgnoringCase('Permananet Address :Carrera 56 # 5')
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: equalToIgnoringCase("Permananet Address :Carrera 56 # 5") but: was Permananet Address :Carrera 56 # 50
 ]]></system-err>
 </testsuite>

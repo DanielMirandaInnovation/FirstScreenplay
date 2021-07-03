@@ -1,8 +1,10 @@
 package com.demoqa.tests.stepdefinitions;
 
 import com.demoqa.automation.interactions.OpenTheBrowser;
+import com.demoqa.automation.tasks.ExcelValidations;
 import com.demoqa.automation.tasks.FillAllFields;
 import com.demoqa.automation.tasks.FillAllFieldsWithExcel;
+import com.demoqa.automation.tasks.TextBoxValidations;
 import com.demoqa.automation.ui.TextBoxPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -45,6 +47,8 @@ public class TextBoxStepDefinitions {
 
     @Then("^he should see him data down\\.$")
     public void heShouldSeeHimDataDown() {
+        //theActorInTheSpotlight().attemptsTo(TextBoxValidations.compareText());
+        theActorInTheSpotlight().attemptsTo(ExcelValidations.compareText());
     }
 
 }

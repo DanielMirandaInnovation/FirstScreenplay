@@ -9,6 +9,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/textBox.feature",
 glue = "com.demoqa.tests.stepdefinitions",
 snippets = SnippetType.CAMELCASE,
-tags = "@regression")
+tags = "@smokeTest")
 public class TextBoxRunner {
 }

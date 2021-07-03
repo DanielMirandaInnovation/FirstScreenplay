@@ -6,8 +6,14 @@ com/demoqa/automation/interactions/OpenTheBrowser.java
  com.demoqa.automation.interactions.OpenTheBrowser
 com/demoqa/automation/ui/TextBoxPage.java
  com.demoqa.automation.ui.TextBoxPage
+com/demoqa/automation/questions/GetTextQuestion.java
+ com.demoqa.automation.questions.GetTextQuestion
 com/demoqa/automation/models/DataInjection.java
  com.demoqa.automation.models.DataInjection
+com/demoqa/automation/tasks/ExcelValidations.java
+ com.demoqa.automation.tasks.ExcelValidations
+com/demoqa/automation/tasks/TextBoxValidations.java
+ com.demoqa.automation.tasks.TextBoxValidations
 com/demoqa/automation/tasks/FillAllFieldsWithExcel.java
  com.demoqa.automation.tasks.FillAllFieldsWithExcel
 com/demoqa/automation/tasks/FillAllFields.java

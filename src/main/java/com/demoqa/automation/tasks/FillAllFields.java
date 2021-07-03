@@ -15,6 +15,8 @@ public class FillAllFields implements Task {
 
     DataInjection dataInjection = new DataInjection();
 
+    public static String name,email,currentAddress,permanentAddress;
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
@@ -22,9 +24,14 @@ public class FillAllFields implements Task {
                 Enter.theValue(dataInjection.getEmail()).into(TextBoxPage.EMAIL_INPUT),
                 Enter.theValue(dataInjection.getCurrentAddress()).into(TextBoxPage.CURRENT_ADDRESS_INPUT),
                 Enter.theValue(dataInjection.getPermanentAddress()).into(TextBoxPage.PERMANENT_ADDRESS_INPUT),
+                Scroll.to(TextBoxPage.SUBMIT_BUTTON),
                 JavaScriptClick.on(TextBoxPage.SUBMIT_BUTTON),
                 WaitUntil.the(TextBoxPage.FULL_NAME_VALIDATION,isVisible())
         );
+        name = dataInjection.getName();
+        email = dataInjection.getEmail();
+        currentAddress = dataInjection.getCurrentAddress();
+        permanentAddress = dataInjection.getPermanentAddress();
     }
 
     public static FillAllFields successful(){

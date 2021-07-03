@@ -11,4 +11,8 @@ public class TextBoxPage {
     public static final Target PERMANENT_ADDRESS_INPUT = Target.the("").located(By.id("permanentAddress"));
     public static final Target SUBMIT_BUTTON = Target.the("").located(By.id("submit"));
     public static final Target FULL_NAME_VALIDATION = Target.the("").located(By.id("name"));
+    public static final Target EMAIL_VALIDATION = Target.the("").located(By.id("email"));
+    public static final Target CURRENT_ADDRESS_VALIDATION = Target.the("").locatedBy("//p[@id='currentAddress']");
+    public static final Target PERMANENT_ADDRESS_VALIDATION = Target.the("").locatedBy("//p[@id='permanentAddress']");
+
 }
